@@ -1,0 +1,37 @@
+@media only screen and (min-width: 600px){
+#headingFirstUser{
+    font-size: larger; font-weight: 600;  margin-left :35em; margin-top :1em; margin-bottom :1em;
+}
+
+#image1, #image2, #image3{
+   width: 100px;
+
+}
+
+#imageGap1, #imageGap2  {
+    margin-left :5em;
+
+ }
+ 
+
+
+#image1{
+    margin-left :32em;
+ }
+
+#displayResultDIv{
+    width: 30em; margin-left :13.5em; font-size: 50px; color: red; font-weight: 900;
+}
+
+#movePrintDiv{
+    width: 150px;   margin-left :43em;
+}
+
+#headingAuto{
+    font-size: larger; font-weight: 600; margin-left :35.5em;  margin-top :30px; margin-bottom :30px;
+}
+
+#printDiv{
+    width: 150px; margin-left :43em;
+}
+}
