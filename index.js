@@ -15,7 +15,7 @@ document.getElementById('movePrintDiv').appendChild(moveImage);
 var nodes = document.getElementById('movePrintDiv').childNodes;
 for(var i=0; i<nodes.length; i++) {
     if (nodes[i].nodeName.toLowerCase() == "img") {
-         nodes[i].style.width = "7em";
+         nodes[i].style.width = "6em";
      }
 }
 
@@ -39,7 +39,7 @@ function chooseMove2(){
   var nodes = document.getElementById('movePrintDiv').childNodes;
   for(var i=0; i<nodes.length; i++) {
       if (nodes[i].nodeName.toLowerCase() == "img") {
-           nodes[i].style.width = "7em";
+           nodes[i].style.width = "6em";
        }
   }
   }
@@ -61,7 +61,7 @@ function chooseMove2(){
     var nodes = document.getElementById('movePrintDiv').childNodes;
     for(var i=0; i<nodes.length; i++) {
         if (nodes[i].nodeName.toLowerCase() == "img") {
-             nodes[i].style.width = "7em";
+             nodes[i].style.width = "6em";
          }
     }
     }
@@ -89,7 +89,7 @@ function chooseMove2(){
       var nodes = document.getElementById('printDiv').childNodes;
       for(var i=0; i<nodes.length; i++) {
           if (nodes[i].nodeName.toLowerCase() == "img") {
-               nodes[i].style.width = "7em";
+               nodes[i].style.width = "6em";
            }
       }
       }
@@ -99,18 +99,20 @@ function chooseMove2(){
       function resultDisplay1(){
         
         let enemyMoveImage = document.getElementById('printImageResult').src;
+        enemyMoveImage = enemyMoveImage.split("/");
+        let checkEnemyMoveImage = enemyMoveImage[enemyMoveImage.length - 1];
 
-        if(enemyMoveImage == "http://127.0.0.1:5500/p1.png")
+        if(checkEnemyMoveImage == "p1.png")
         {
           document.getElementById('displayResultDIv').innerHTML = "DRAW";
         }
 
-        else if (enemyMoveImage == "http://127.0.0.1:5500/r1.png")
+        else if (checkEnemyMoveImage == "r1.png")
         {
           document.getElementById('displayResultDIv').innerHTML = "YOU WON";
         }
 
-        else if (enemyMoveImage == "http://127.0.0.1:5500/s1.png")
+        else if (checkEnemyMoveImage == "s1.png")
         {
           document.getElementById('displayResultDIv').innerHTML = "YOU LOST";
         }
@@ -123,18 +125,20 @@ function chooseMove2(){
       function resultDisplay2(){
         
         let enemyMoveImage = document.getElementById('printImageResult').src;
+        enemyMoveImage = enemyMoveImage.split("/");
+        let checkEnemyMoveImage = enemyMoveImage[enemyMoveImage.length - 1];
 
-        if(enemyMoveImage == "http://127.0.0.1:5500/r1.png")
+        if(checkEnemyMoveImage == "r1.png")
         {
           document.getElementById('displayResultDIv').innerHTML = "DRAW";
         }
 
-        else if (enemyMoveImage == "http://127.0.0.1:5500/s1.png")
+        else if (checkEnemyMoveImage == "s1.png")
         {
           document.getElementById('displayResultDIv').innerHTML = "YOU WON";
         }
 
-        else if (enemyMoveImage == "http://127.0.0.1:5500/p1.png")
+        else if (checkEnemyMoveImage == "p1.png")
         {
           document.getElementById('displayResultDIv').innerHTML = "YOU LOST";
         }
@@ -146,17 +150,19 @@ function chooseMove2(){
       function resultDisplay3(){
         
         let enemyMoveImage = document.getElementById('printImageResult').src;
+        enemyMoveImage = enemyMoveImage.split("/");
+        let checkEnemyMoveImage = enemyMoveImage[enemyMoveImage.length - 1];
 
-        if(enemyMoveImage == "http://127.0.0.1:5500/s1.png"){
+        if(checkEnemyMoveImage == "s1.png"){
           document.getElementById('displayResultDIv').innerHTML = "DRAW";
         }
 
-        else if (enemyMoveImage == "http://127.0.0.1:5500/p1.png")
+        else if (checkEnemyMoveImage == "p1.png")
         {
           document.getElementById('displayResultDIv').innerHTML = "YOU WON";
         }
 
-        else if (enemyMoveImage == "http://127.0.0.1:5500/r1.png")
+        else if (checkEnemyMoveImage == "r1.png")
         {
           document.getElementById('displayResultDIv').innerHTML = "YOU LOST";
         }
